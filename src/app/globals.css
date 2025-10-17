@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --muted-foreground: #6b7280; /* gray-500 */
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utility helpers used by components */
+.text-muted-foreground { color: var(--muted-foreground); }
+.bg-foreground { background: var(--foreground); }
+.text-background { color: var(--background); }
+
